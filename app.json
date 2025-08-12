@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "expo-template-default",
+    "name": "ppdm",
+    "slug": "ppdm",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -9,14 +9,16 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pedrodelmiro.ppdm"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.pedrodelmiro.ppdm"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +39,18 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f2065174-81fc-48a8-9082-ad1a6ae21d3b"
+      }
+    },
+    "owner": "pedrodelmiro",
+    "updates": {
+      "url": "https://u.expo.dev/f2065174-81fc-48a8-9082-ad1a6ae21d3b"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
