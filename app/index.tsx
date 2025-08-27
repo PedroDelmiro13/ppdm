@@ -1,3 +1,4 @@
+import { Stack } from "expo-router";
 import { Image, Text, View } from "react-native";
 
 export default function Index() {
@@ -9,9 +10,14 @@ export default function Index() {
         alignItems: "center",
       }}
     >
+    <Stack.Screen
+     options={{
+        title: "Perfil",
+     }}
+    />
       <Image 
-      style={{width:150, height: 150}}
-      source={require('@/assets/images/partial-react-logo.png')}
+      style={{width:350, height: 350, borderRadius: 20}}
+      source={require('@/assets/images/pedrofoto.jpg')}
       />
       <Text style={{ fontSize: 28, fontWeight: 'bold' }}>Pedro Delmiro</Text>
       <Text>Desenvolvedor backend com foco em java com springboot criando APIs escaláveis.</Text>
